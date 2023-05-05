@@ -9,5 +9,7 @@ class Patient extends Person {
     Date dateRegistered
 
     static constraints = {
+        prescriptions(nullable:true)
     }
+    static hasMany=[surgeries:Surgery, appointments:Appointment, prescriptions:Prescription]
 }

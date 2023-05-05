@@ -8,4 +8,10 @@ class Appointment {
 
     static constraints = {
     }
+
+    String toString(){
+        return(appDuration)
+    }
+
+    static hasOne = [doctor:Doctor, patient:Patient, surgery:Surgery]
 }

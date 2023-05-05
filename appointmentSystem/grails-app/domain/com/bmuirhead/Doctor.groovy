@@ -6,4 +6,6 @@ class Doctor extends MedicalStaff {
     String bio
     static constraints = {
     }
+    static hasMany = [appointments:Appointment, prescriptions:Prescription, nurses:Nurse]
+    static belongsTo = [Nurse]
 }

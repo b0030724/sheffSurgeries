@@ -8,8 +8,24 @@ class Surgery {
     String telephone
     int maxNumberOfPatients
     String openingTime
-    boolean registeringnewPatients
+    boolean registeringNewPatients
     String description
+
+    String toString(){
+        return(name)
+    }
+
+    static hasMany = [workers:Worker, patients:Patient, appointments:Appointment]
+
+    static belongsTo = Patient
+
+    Integer getPatients(){
+        patients?.size() ?: 0
+    }
+
+    void beforeUpdate() {
+        numberOfPatients = getPatients()
+    }
 
     static constraints = {
     }

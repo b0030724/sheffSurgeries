@@ -9,6 +9,12 @@ class Prescription {
     Date dateIssued
     boolean patientPaying
 
-    static constraints = {
+    String toString(){
+
     }
+
+    static constraints = {
+        prescriptionNumber (unique: true)
+    }
+    static hasOne = [doctor:Doctor, patient:Patient]
 }

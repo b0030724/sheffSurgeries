@@ -10,4 +10,6 @@ class Worker extends Person {
     password(password:true)
     email(email:true)
     }
+
+    static hasOne = [surgery:Surgery]
 }
