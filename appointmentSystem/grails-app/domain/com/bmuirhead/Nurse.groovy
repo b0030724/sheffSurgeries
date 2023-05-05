@@ -1,6 +1,6 @@
 package com.bmuirhead
 
-class Nurse {
+class Nurse extends MedicalStaff {
 
     static constraints = {
     }

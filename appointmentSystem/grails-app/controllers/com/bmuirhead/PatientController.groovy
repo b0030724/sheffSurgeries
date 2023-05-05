@@ -2,5 +2,5 @@ package com.bmuirhead
 
 class PatientController {
 
-    def index() { }
+    def scaffold = com.bmuirhead.Patient
 }

@@ -2,5 +2,5 @@ package com.bmuirhead
 
 class PrescriptionController {
 
-    def index() { }
+    def scaffold = com.bmuirhead.Prescription
 }

@@ -1,6 +1,6 @@
 package com.bmuirhead
 
-class Receptionist {
+class Receptionist extends Worker {
 
     static constraints = {
     }

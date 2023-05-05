@@ -2,5 +2,5 @@ package com.bmuirhead
 
 class AppointmentController {
 
-    def index() { }
+    def scaffold = com.bmuirhead.Appointment
 }

@@ -1,6 +1,9 @@
 package com.bmuirhead
 
-class MedicalStaff {
+class MedicalStaff extends Worker {
+
+    String office
+    String qualifications
 
     static constraints = {
     }

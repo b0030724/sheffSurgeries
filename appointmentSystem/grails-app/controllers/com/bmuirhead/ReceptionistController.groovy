@@ -2,5 +2,5 @@ package com.bmuirhead
 
 class ReceptionistController {
 
-    def index() { }
+    def scaffold = com.bmuirhead.Receptionist
 }
